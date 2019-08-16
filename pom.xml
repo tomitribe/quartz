@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.quartz-scheduler</groupId>
+  <groupId>org.tomitribe.quartz</groupId>
   <artifactId>quartz-parent</artifactId>
   <version>2.2.4-SNAPSHOT</version>
   <name>quartz-parent</name>
@@ -24,10 +24,10 @@
     </license>
   </licenses>  
   <scm>
-    <connection>scm:svn:http://svn.terracotta.org/svn/quartz</connection>
-    <developerConnection>scm:svn:https://svn.terracotta.org/repo/quartz</developerConnection>
-    <tag/>
-    <url>http://svn.terracotta.org/svn/quartz</url>
+    <connection>scm:git:git@github.com:tomitribe/quartz.git</connection>
+    <developerConnection>scm:git:git@github.com:tomitribe/quartz.git</developerConnection>
+    <tag />
+    <url>https://github.com/tomitribe/quartz</url>
   </scm>
   <issueManagement>
     <system>Terracotta's JIRA</system>
@@ -330,10 +330,15 @@
     <profile>
       <id>release</id>
       <distributionManagement>
+        <snapshotRepository>
+          <id>quartz-snapshots</id>
+          <name>Quartz snapshots at Sonatype Nexus</name>
+          <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
         <repository>
-          <id>terracotta-releases</id>
-          <name>Terracotta Releases Repository</name>
-          <url>${terracotta-releases-url}</url>
+          <id>quartz-staging</id>
+          <name>Quartz release staging at Sonatype Nexus</name>
+          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
       </distributionManagement>
     </profile>
@@ -352,20 +357,19 @@
         <additionalparam>-Xdoclint:none</additionalparam>
       </properties>
     </profile>
-  </profiles>  
+  </profiles>
 
   <distributionManagement>
-    <repository>
-      <id>terracotta-staging</id>
-      <name>Terracotta Staging Repository</name>
-      <url>${terracotta-staging-url}</url>
-    </repository>
     <snapshotRepository>
-      <id>terracotta-snapshots</id>
-      <uniqueVersion>false</uniqueVersion>
-      <name>Terracotta Snapshots Repository</name>
-      <url>${terracotta-snapshots-url}</url>
+      <id>quartz-snapshots</id>
+      <name>Quartz snapshots at Sonatype Nexus</name>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+    <repository>
+      <id>quartz-staging</id>
+      <name>Quartz release staging at Sonatype Nexus</name>
+      <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
   </distributionManagement>
 
   <repositories>
