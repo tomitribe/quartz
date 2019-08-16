@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.quartz-scheduler</groupId>
+    <groupId>org.tomitribe.quartz</groupId>
     <artifactId>quartz-parent</artifactId>
     <version>${revision}</version>
   </parent>
@@ -20,42 +20,42 @@
   <dependencies>  
     <!-- internal components used for shading which will be removed in final pom -->
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-terracotta-bootstrap</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-commonj</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-jboss</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-oracle</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-weblogic</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler.internal</groupId>
+      <groupId>org.tomitribe.quartz.internal</groupId>
       <artifactId>quartz-plugins</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler</groupId>
+      <groupId>org.tomitribe.quartz</groupId>
       <artifactId>quartz-jobs</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
@@ -126,7 +126,7 @@
         <configuration>
           <artifactSet>
             <includes>
-              <include>org.quartz-scheduler.internal:*</include>
+              <include>org.tomitribe.quartz.internal:*</include>
             </includes>
             <excludes>
               <exclude>*:quartz-stubs:*</exclude>

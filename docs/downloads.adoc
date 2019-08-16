@@ -16,7 +16,7 @@ Add the following into your project `pom.xml` file under `<dependencies>` elemen
 ----
 <!-- Quartz Core -->
 <dependency>
-  <groupId>org.quartz-scheduler</groupId>
+  <groupId>org.tomitribe.quartz</groupId>
   <artifactId>quartz</artifactId>
   <version>{quartz-version}</version>
 </dependency>
