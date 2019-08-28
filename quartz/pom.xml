@@ -104,8 +104,8 @@
           <bottom>Copyright 2001-{currentYear}, Terracotta, Inc.</bottom>
           <includeDependencySources>true</includeDependencySources>      
           <dependencySourceIncludes>
-            <dependencySourceInclude>org.quartz-scheduler.internal:*</dependencySourceInclude>
-            <dependencySourceInclude>org.quartz-scheduler:quartz-jobs</dependencySourceInclude>
+            <dependencySourceInclude>org.tomitribe.quartz.internal:*</dependencySourceInclude>
+            <dependencySourceInclude>org.tomitribe.quartz:quartz-jobs</dependencySourceInclude>
           </dependencySourceIncludes>
         </configuration>
         <executions>
