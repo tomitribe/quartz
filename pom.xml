@@ -4,7 +4,7 @@
 
   <groupId>org.tomitribe.quartz</groupId>
   <artifactId>quartz-parent</artifactId>
-  <version>2.2.4-SNAPSHOT</version>
+  <version>2.2.4</version>
   <name>quartz-parent</name>
   <packaging>pom</packaging>
   
@@ -27,6 +27,7 @@
     <connection>scm:git:git@github.com:tomitribe/quartz.git</connection>
     <developerConnection>scm:git:git@github.com:tomitribe/quartz.git</developerConnection>
     <url>https://github.com/tomitribe/quartz</url>
+    <tag>quartz-2.2.4</tag>
   </scm>
   <issueManagement>
     <system>Terracotta's JIRA</system>
@@ -104,7 +105,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -117,7 +118,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>                
                 <pluginExecution>
@@ -134,7 +135,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -147,7 +148,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -160,7 +161,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -173,7 +174,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
