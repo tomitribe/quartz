@@ -302,9 +302,6 @@
                 <goals>
                   <goal>sign</goal>
                 </goals>
-                <configuration>
-                  <keyname>Terracotta Release Engineer</keyname>
-                </configuration>
               </execution>
             </executions>
           </plugin>
