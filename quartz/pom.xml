@@ -106,7 +106,7 @@
             </goals>
             <phase>verify</phase>
             <configuration>
-              <enforceGroupId>org.quartz-scheduler.internal</enforceGroupId>
+              <enforceGroupId>org.tomitribe.quartz.internal</enforceGroupId>
               <enforceArtifactId>quartz-core</enforceArtifactId>
               <enforceVersion>${project.version}</enforceVersion>
             </configuration>
