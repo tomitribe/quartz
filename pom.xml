@@ -26,7 +26,6 @@
   <scm>
     <connection>scm:git:git@github.com:tomitribe/quartz.git</connection>
     <developerConnection>scm:git:git@github.com:tomitribe/quartz.git</developerConnection>
-    <tag />
     <url>https://github.com/tomitribe/quartz</url>
   </scm>
   <issueManagement>
